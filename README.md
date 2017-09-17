@@ -25,3 +25,6 @@ First step to chatbot, allow user to start with any string, such as "I want to f
     - Better Text Analysis and more sort by relevance of database search
 
 
+## View
+
+![alt text](https://raw.githubusercontent.com/jlukose12/thdCodeAthlon2017/master/Images/askScreen.gif)

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ask Home Depot</title>
+
+    <link rel="icon" href="https://cdn-static.findly.com/wp-content/uploads/sites/129/2015/12/homedepot-icon.png">
+
+    <link rel="stylesheet" href="style2.css"/>
+
+</head>
+
+<body>
+
+    <center>
+        <h1>Results</h1>
+        <h4><a href="/">Search for another project</a></h4>
+    <center>
+        <table>
+        <tr>  
+            <th>Project</th>
+            <th>Item</th>
+            <th>Image</th>
+            <th>Project Details</th>
+        </tr> 
+        {% for items in it %}
+        {% for stuff in needs %}
+        <tr>
+            <td>{{items[0]}}</td>
+            <td><a href='{{stuff[3]}}' target = 'blank'>{{stuff[1]}}</a></td>
+            <td ><img style="
+            height: 100px;
+            width: 100px;" src="{{stuff[2][1]}}"/></td>
+            <td ><a href='{{items[1]}}' target = 'blank'>{{items[1]}}</a></td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+        </table>
+
+</body>
+
+</html>
